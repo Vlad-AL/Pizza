@@ -1,0 +1,469 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #fff,#fcfcfc,#fff);
+}
+
+@font-face {
+    font-family: "fred";
+    src: url(fonts/FrederickatheGreat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "gabe";
+    src: url(fonts/Gabelisa.otf);
+}
+
+@font-face {
+    font-family: "mont_b";
+    src: url(fonts/Montserrat.ttf);
+}
+
+@font-face {
+    font-family: "mont_r";
+    src: url(fonts/Montserrat_regular.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.welcome {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(img/w_bg2.png);
+    background-repeat: no-repeat;
+}
+
+.welcome .container {
+    padding-top: 70px;
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+.header {
+    padding: 25px 0;
+}
+
+.nav_button {
+    display: none;
+}
+
+.h_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h_logo {
+    width: 190px;
+    height: 47px;
+    background-image: url(img/w_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hd_text {
+    text-align: right;
+    font-family: "mont_b";
+    text-transform: uppercase;
+    margin-top: auto;
+}
+
+.hd_heading {
+    font-size: 15px;
+}
+
+.hd_number {
+    font-size: 25px;
+}
+
+.tel_icon {
+    width: 29px;
+    height: 53px;
+    background-image: url(img/phone_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.h_delivery {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    justify-content: space-between;
+    font-family: "mont_b";
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.nav a {
+    color: #000;
+}
+
+.w_ad {
+    width: 50%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.w_ad_heading {
+    font-size: 57px;
+    font-family: "gabe";
+}
+
+.w_ad_subheading {
+    font-size: 90px;
+    font-family: "fred";
+    text-transform: uppercase;
+}
+
+.w_ad_call_text {
+    font-size: 26px;
+    font-family: "mont_b";
+    text-transform: uppercase;
+}
+
+.stick {
+    width: 85%;
+}
+
+.discount_block {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+    font-family: "fred";
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.dis_text {
+    margin-top: auto;
+    font-size: 22px;
+    width: 50%;
+}
+
+.dis_example {
+    margin-top: auto;
+    font-size: 51px;
+}
+
+.button_block {
+    width: 230px;
+    height: 55px;
+    margin: 0 auto;
+}
+
+.button {
+    display: block;
+    color: #000;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border: 1px solid #000;
+    font-family: "mont_b";
+    font-size: 20px;
+}
+
+.range {
+    position: relative;
+    height: 100%;
+}
+
+.range_content div {
+    z-index: 1;
+}
+
+.w_sp {
+    position: absolute;
+    background-image: url(img/spaghetti.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 260px;
+    width: 260px;
+    bottom: -130px;
+    left: -130px;
+    overflow: hidden;
+}
+
+.band {
+    position: absolute;
+    z-index: 0;
+    height: 18%;
+    width: 100%;
+    top: 41%;
+    background: linear-gradient(#e8e6a9, #e1dfa4);
+}
+
+.r_heading_text {
+    padding: 30px 0;
+    margin: auto;
+    width: 82%;
+    text-align: center;
+}
+
+.r_heading {
+    font-size: 50px;
+    font-family: "fred";
+    text-transform: uppercase;
+}
+
+.r_subheading {
+    font-size: 17px;
+    font-family: "mont_r";
+    margin-top: 10px;
+}
+
+.dishes .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish_icon {
+    margin: auto;
+    width: 75%;
+}
+
+.dish_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.dish_heading {
+    font-size: 20px;
+    font-family: "mont_b";
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.dish_text {
+    font-size: 16px;
+    font-family: "mont_r";
+    margin-top: 15px;
+}
+
+.order_button {
+    display: inline-block;
+    font-size: 16px;
+    font-family: "mont_b";
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding: 15px 40px;
+    background-color: #ffe001;
+}
+
+.daily {
+    padding: 90px 0;
+}
+
+.daily .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+.daily .container div {
+    background-size: cover;
+    color: #fff;
+    font-family: "mont_b";
+    text-transform: uppercase;
+}
+
+.daily_b {
+    width: 47%;
+    height: 400px;
+    background-image: url(img/daily1.png);
+    padding: 50px;
+    
+}
+
+.daily_b .d_block_text {
+    font-size: 36px;
+}
+
+.daily_s {
+    width: 45%;
+    height: 170px;
+    background-image: url(img/daily2.png);
+    padding: 30px;
+}
+
+.daily_l {
+    margin-top: 60px;
+    background-image: url(img/daily3.png);
+}
+
+.d_block_heading {
+    font-size: 25px;
+}
+
+.d_block_text {
+    font-size: 31px;
+    width: 50%;
+}
+
+.b_text {
+    text-transform: uppercase;
+}
+
+.b_heading {
+    font-size: 21px;
+    font-family: "mont_b";
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.b_subheading {
+    font-family: "fred";
+    text-align: center;
+    font-size: 50px;
+}
+
+.b_inputs {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.b_inputs input,
+.b_inputs a{
+    display: block;
+    width: 48%;
+    padding: 15px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+}
+
+.b_inputs input {
+    outline: none;
+    font-family: "mont_r";
+    color: #3d3d3d;
+}
+
+.b_inputs a {
+    background-color: #ffe001;
+    text-align: center;
+    font-family: "mont_b";
+    font-size: 21px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.i_center {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    font-family: "mont_r";
+}
+
+.footer {
+    height: 580px;
+    width: 100%;
+    background-image: url(img/footer_bg.png);
+}
+
+.bi_button {
+    color: #000;
+}
+
+.f_logo {
+    width: 280px;
+    height: 69px;
+    background-image: url(img/f_logo.png);
+    background-size: cover;
+}
+
+.footer div {
+    color: rgb(177, 177, 177);
+    font-family: "mont_r";
+    font-size: 14px;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.adress_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+}
+
+.adress_text {
+    width: 42%;
+}
+
+.fp_icon {
+    width: 31px;
+    height: 35px;
+    background-image: url(img/fp_icon.png);
+}
+
+.fe_icon {
+    width: 29px;
+    height: 23px;
+    background-image: url(img/fe_icon.png);
+}
+
+.f_place,
+.f_email {
+    display: flex;
+}
+
+.f_email {
+    margin-top: 20px;
+}
+
+.f_text {
+    margin-left: 40px;
+    margin-top: 3px;
+}
+
+.link_item {
+    width: 29px;
+    height: 29px;
+    margin-left: 17px;
+}
+
+.links {
+    display: flex;
+}
+
+.f_ending {
+    display: flex;
+    justify-content: space-between;
+}
